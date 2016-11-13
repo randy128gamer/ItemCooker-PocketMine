@@ -44,9 +44,9 @@ class ItemCooker extends PluginBase {
         foreach ($this->getServer()->getCraftingManager()->getFurnaceRecipes() as $meta => $recipe) {
             if ($recipe->getInput()->equals($item)) {
                 $cookedItem = $recipe->getResult();
-                $id = $cookedItem->getId();
                 $count = $item->getCount();
-                $result = new Item($id, $meta, $count);
+                $cookedItem->setCount($count);
+                $result = clone $cookedItem;
                 break;
             }
         }

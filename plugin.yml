@@ -1,6 +1,6 @@
 name: ItemCooker
 main: itemcooker\ItemCooker
-version: 1.0.0
+version: 1.0.1
 api: [2.0.0, 2.1.0, 2.2.0, 2.3.0]
 author: randy128gamer, xXSuperFrostyXx
 description: A plugin that allows the player to cook any items with their hand.
